@@ -7,8 +7,25 @@
 
     <Content type="html">
         <![CDATA[
-            <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
-            <!-- Your application code -->
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <meta charset="utf-8">
+
+                    <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+                    <script>
+                        'use strict';
+
+                        gapi.hangout.onApiReady.add(function(event){
+console.log(event);
+                        });
+                    </script>
+                </head>
+
+                <body>
+                    <h1>Hello Plunker!</h1>
+                </body>
+            </html>
         ]]>
     </Content>
 </Module>
