@@ -17,7 +17,7 @@
                         'use strict';
 
                         gapi.hangout.onApiReady.add(function(event){
-event.isApiReady && console.log(gapi.hangout.getHangoutId());
+event.isApiReady && console.log(gapi.hangout.getHangoutUrl().split('/').pop());
                         });
                     </script>
                 </head>
