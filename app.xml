@@ -20,7 +20,7 @@
                         var postHangoutId = function(lessonId, hangoutId) {
                             var ajax = new XMLHttpRequest();
 
-                            ajax.open('POST', 'http://192.168.1.218:8080/api/lessons/' + lessonId + '/hangouts');
+                            ajax.open('POST', 'https://codementor.io/api/lessons/' + lessonId + '/hangouts');
                             ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                             ajax.send('hangouts_id=' + hangoutId);
                         };
