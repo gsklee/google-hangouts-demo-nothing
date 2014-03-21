@@ -25,7 +25,7 @@
                         };
 
                         gapi.hangout.onApiReady.add(function(event){
-event.isApiReady && console.log(gapi.hangout.getHangoutUrl().split('/').pop(), gapi.hangout.getStartData());
+                            event.isApiReady && postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
                         });
                     </script>
                 </head>
