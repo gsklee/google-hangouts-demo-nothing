@@ -16,8 +16,16 @@
                     <script>
                         'use strict';
 
+                        var postHangoutId = function(lessonId, hangoutId) {
+                            var ajax = new XMLHttpRequest();
+
+                            ajax.open('POST', 'https://codementor.io/api/lessons/' + lessonId + '/hangouts');
+                            ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            ajax.send('hangouts_id=' + hangoutId);
+                        };
+
                         gapi.hangout.onApiReady.add(function(event){
-event.isApiReady && console.log(gapi.hangout.getHangoutUrl().split('/').pop());
+event.isApiReady && console.log(gapi.hangout.getHangoutUrl().split('/').pop(), gapi.hangout.getStartData());
                         });
                     </script>
                 </head>
