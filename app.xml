@@ -23,8 +23,9 @@
                             ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                             ajax.send('hangouts_id=' + hangoutId);
                         };
-console.log(gapi.hangout.getHangoutId());
+
                         gapi.hangout.onApiReady.add(function(event){
+console.log(gapi.hangout.getHangoutId());
                             event.isApiReady && postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
                         });
                     </script>
