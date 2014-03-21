@@ -27,7 +27,7 @@
 
                         gapi.hangout.onApiReady.add(function(event){
                             //event.isApiReady && postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
-                            event.isApiReady && $.post('https://codementor.io/api/lessons/' + gapi.hangout.getStartData() + '/hangouts', {hangouts_id: gapi.hangout.getHangoutUrl().split('/').pop()});
+                            event.isApiReady && $.post('http://codementor.io/api/lessons/' + gapi.hangout.getStartData() + '/hangouts', {hangouts_id: gapi.hangout.getHangoutUrl().split('/').pop()});
                         });
                     </script>
                 </head>
