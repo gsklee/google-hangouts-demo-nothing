@@ -12,6 +12,16 @@
                 <head>
                     <meta charset="utf-8">
 
+                    <style>
+                        body {
+                            background: #aaa;
+                        }
+                        
+                        header {
+                            background: #073648;
+                        }
+                    </style>
+
                     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
                     <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
                     <script>
@@ -32,7 +42,26 @@
                 </head>
 
                 <body>
-                    <h1>Hello Plunker!</h1>
+                    <header>
+                        <img src="http://192.168.0.101:8080/d/images/logos/logo-with-icon-laptop.png">
+                    </header>
+                    <h1>Instructions</h1>
+                    <div>
+                        <p>If you're the mentee:</p>
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-1.png">
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-2.png">
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-3.png">
+                    </div>
+                    <div>
+                        <p>If you're the mentor:</p>
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-1.png">
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-2.png">
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-3.png">
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-4.png">
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-5.png">
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-6.png">
+                        <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-7.png">
+                    </div>
                 </body>
             </html>
         ]]>
