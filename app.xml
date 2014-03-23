@@ -31,6 +31,10 @@
                         div {
                             display: none;
                         }
+                        
+                        .inline-block {
+                            display: inline-block;
+                        }
                     </style>
 
                     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -66,21 +70,27 @@
                     </header>
                     <h1>Instructions</h1>
                     <div class="mentee-instructions">
-                        <ol>
-                            <li>Wait for mentor joining the hangout</li>
-                            <li>Accept the screen sharing request when prompted</li>
+                        <div class="inline-block">
+                            <p>1. Wait for mentor joining the hangout</p>
+                        </div>
+                        <div class="inline-block">
+                            <p>2. Accept the screen sharing request when prompted</p>
                             <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-1.png">
-                        </ol>
+                        </div>
                     </div>
                     <div class="mentor-instructions">
-                        <ol>
-                            <li>Click "Add apps"</li>
+                        <div class="inline-block">
+                            <p>1. Click "Add apps"</p>
                             <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-1.png">
-                            <li>Click "Remote Desktop"</li>
+                        </div>
+                        <div class="inline-block">
+                            <p>2. Click "Remote Desktop"</p>
                             <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-2.png">
-                            <li>Click on "Help Mentee"</li>
+                        </div>
+                        <div class="inline-block">
+                            <p>3. Click on "Help Mentee"</p>
                             <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-4.png">
-                        </ol>
+                        </div>
                     </div>
                 </body>
             </html>
