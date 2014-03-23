@@ -34,6 +34,14 @@
                         
                         .inline-block {
                             display: inline-block;
+                            verticle-align: top;
+                            margin: 30px;
+                        }
+                        
+                        .mentor-instructions,
+                        .mentee-instructions {
+                            width: 75%;
+                            margin: 0 auto;
                         }
                     </style>
 
@@ -68,8 +76,8 @@
                     <header>
                         <img src="http://192.168.0.101:8080/d/images/logos/logo-with-icon-laptop.png">
                     </header>
-                    <h1>Instructions</h1>
                     <div class="mentee-instructions">
+                        <h1>Instructions</h1>
                         <div class="inline-block">
                             <p>1. Wait for mentor joining the hangout</p>
                         </div>
@@ -79,6 +87,7 @@
                         </div>
                     </div>
                     <div class="mentor-instructions">
+                        <h1>Instructions</h1>
                         <div class="inline-block">
                             <p>1. Click "Add apps"</p>
                             <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-1.png">
