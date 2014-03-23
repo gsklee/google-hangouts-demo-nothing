@@ -27,6 +27,10 @@
                         header > img {
                             height: 100px;
                         }
+                        
+                        div {
+                            display: none;
+                        }
                     </style>
 
                     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -43,7 +47,15 @@
                         };
 
                         gapi.hangout.onApiReady.add(function(event){
-                            event.isApiReady && postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
+                            if (event.isApiReady) {
+                                postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
+                                
+                                if (1 === gapi.hangout.getParticipants().length) {
+                                    $('.mentee-instructions').show();
+                                } else {
+                                    $('.mentor-instructions').show();
+                                }
+                            }
                         });
                     </script>
                 </head>
@@ -53,14 +65,12 @@
                         <img src="http://192.168.0.101:8080/d/images/logos/logo-with-icon-laptop.png">
                     </header>
                     <h1>Instructions</h1>
-                    <div>
-                        <p>If you're the mentee:</p>
+                    <div class="mentee-instructions">
                         <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-1.png">
                         <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-2.png">
                         <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-3.png">
                     </div>
-                    <div>
-                        <p>If you're the mentor:</p>
+                    <div class="mentor-instructions">
                         <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-1.png">
                         <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-2.png">
                         <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-3.png">
