@@ -14,11 +14,17 @@
 
                     <style>
                         body {
-                            background: #aaa;
+                            color: #fff;
+                            background: #112c36;
                         }
                         
                         header {
+                            height: 100px;
                             background: #073648;
+                        }
+                        
+                        header > img {
+                            height: 100px;
                         }
                     </style>
 
