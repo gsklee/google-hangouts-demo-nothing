@@ -54,7 +54,7 @@
                             var ajax = new XMLHttpRequest();
 
                             ajax.open('POST', 'https://www.codementor.io/api/lessons/' + lessonId + '/hangouts');
-                            ajax.setRequestHeader('Content-type', 'application/json');
+                            ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                             ajax.send('{"hangouts_id": "' + hangoutId + '"}');
                         };
 
