@@ -87,7 +87,7 @@
                         </div>
                         <div class="inline-block">
                             <p>3. Enjoy the screen sharing</p>
-                            <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-3.png">
+                            <img width="250" src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentee-step-3.png">
                         </div>
                     </div>
                     <div class="mentor-instructions">
@@ -98,11 +98,11 @@
                         </div>
                         <div class="inline-block">
                             <p>2. Click "Remote Desktop"</p>
-                            <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-2.png">
+                            <img width="250" src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-2.png">
                         </div>
                         <div class="inline-block">
-                            <p>3. Click on "Help Mentee"</p>
-                            <img src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-4.png">
+                            <p>3. Confirm that you'd like to help the mentee</p>
+                            <img width="250" src="http://192.168.0.101:8080/d/images/google-hangouts-app/mentor-step-4.png">
                         </div>
                     </div>
                 </body>
