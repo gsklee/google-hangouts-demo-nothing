@@ -40,7 +40,7 @@
                         
                         .mentor-instructions,
                         .mentee-instructions {
-                            width: 75%;
+                            width: 80%;
                             margin: 0 auto;
                         }
                     </style>
@@ -54,7 +54,7 @@
                             var ajax = new XMLHttpRequest();
 
                             ajax.open('POST', 'https://www.codementor.io/api/lessons/' + lessonId + '/hangouts');
-                            ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            ajax.setRequestHeader('Content-type', 'application/json');
                             ajax.send('{"hangouts_id": "' + hangoutId + '"}');
                         };
 
