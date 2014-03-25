@@ -1,80 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-    <ModulePrefs title="Your App Name">
-        <Require feature="rpc"/>
-        <Require feature="views"/>
-    </ModulePrefs>
+  <ModulePrefs title="Your App Name">
+    <Require feature="rpc"/>
+    <Require feature="views"/>
+  </ModulePrefs>
 
-    <Content type="html">
-        <![CDATA[
-            <!DOCTYPE html>
-            <html>
-                <head>
-                    <meta charset="utf-8">
+  <Content type="html">
+    <![CDATA[
+      <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
 
-                    <style>
-                        body {
-                            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-                            color: #fff;
-                            background: #181818;
-                        }
-                        
-                        header {
-                            background: #073648;
-                        }
-                        
-                        header > img {
-                            width: 140px;
-                            padding: 20px;
-                        }
-                        
-                        .instructions {
-                            text-align: center;
-                        }
-                        
-                        .inline-block {
-                            display: inline-block;
-                            vertical-align: top;
-                            margin: 30px;
-                        }
-                    </style>
+            <style>
+              body {
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                color: #fff;
+                background: #181818;
+              }
 
-                    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-                    <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
-                    <script>
-                        'use strict';
+              header {
+                background: #073648;
+              }
 
-                        var postHangoutId = function(lessonId, hangoutId) {
-                            var ajax = new XMLHttpRequest();
+              header > img {
+                width: 140px;
+                padding: 20px;
+              }
 
-                            ajax.open('POST', 'https://www.codementor.io/api/lessons/' + lessonId + '/hangouts');
-                            ajax.setRequestHeader('Content-type', 'application/json');
-                            ajax.send('{"hangouts_id": "' + hangoutId + '"}');
-                        };
+              main {
+                text-align: center;
+              }
 
-                        gapi.hangout.onApiReady.add(function() {
-                            postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
-                        });
-                    </script>
-                </head>
+              h1 {
+                margin: 40px 0 0;
+              }
 
-                <body>
-                    <header>
-                        <img src="https://www.codementor.io/assets/img_new/codementor-logo-072bdda0090905876e16edf6bb9fc94d.png">
-                    </header>
-                    <div class="instructions">
-                        <h1>How to Start Remote Desktop Sharing</h1>
-                        <div class="inline-block">
-                            <p>1. Click "Add apps"</p>
-                            <img src="https://cdn.codementor.io/d/images/google-hangouts-app/step-1.png">
-                        </div>
-                        <div class="inline-block">
-                            <p>2. Click "Remote Desktop"</p>
-                            <img src="https://cdn.codementor.io/d/images/google-hangouts-app/step-2.png">
-                        </div>
-                    </div>
-                </body>
-            </html>
-        ]]>
-    </Content>
+              .instruction {
+                display: inline-block;
+                margin: 20px;
+              }
+            </style>
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+            <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+            <script>
+              'use strict';
+
+              var postHangoutId = function(lessonId, hangoutId) {
+                var ajax = new XMLHttpRequest();
+
+                ajax.open('POST', 'https://www.codementor.io/api/lessons/' + lessonId + '/hangouts');
+                ajax.setRequestHeader('Content-type', 'application/json');
+                ajax.send('{"hangouts_id": "' + hangoutId + '"}');
+              };
+
+              gapi.hangout.onApiReady.add(function() {
+                postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
+              });
+            </script>
+          </head>
+
+          <body>
+            <header>
+              <img src="https://www.codementor.io/assets/img_new/codementor-logo-072bdda0090905876e16edf6bb9fc94d.png">
+            </header>
+            <main>
+              <h1>How to Start Remote Desktop Sharing</h1>
+              <ol>
+                <li class="instruction">
+                  <p>1. Click "Add apps"</p>
+                  <img src="https://cdn.codementor.io/d/images/google-hangouts-app/step-1.png">
+                </li>
+                <li class="instruction">
+                  <p>2. Click "Remote Desktop"</p>
+                  <img src="https://cdn.codementor.io/d/images/google-hangouts-app/step-2.png">
+                </li>
+              </ol>
+            </main>
+        </body>
+      </html>
+    ]]>
+  </Content>
 </Module>
