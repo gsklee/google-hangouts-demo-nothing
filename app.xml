@@ -36,6 +36,10 @@
                 margin: 40px 0 0;
               }
 
+              ol {
+                padding: 0;
+              }
+
               .instruction {
                 display: inline-block;
                 margin: 20px;
