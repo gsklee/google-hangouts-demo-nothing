@@ -14,34 +14,30 @@
 
                     <style>
                         body {
+                            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                             color: #fff;
-                            background: #112c36;
+                            background: #181818;
                         }
                         
                         header {
-                            height: 100px;
-                            text-align: center;
                             background: #073648;
                         }
                         
                         header > img {
-                            height: 100px;
+                            width: 140px;
+                            height: 19px;
+                            padding: 20px;
                         }
                         
-                        div {
-                            display: none;
+                        .instructions {
+                            width: 50%;
+                            margin: 0 auto;
                         }
                         
                         .inline-block {
                             display: inline-block;
                             vertical-align: top;
                             margin: 30px;
-                        }
-                        
-                        .mentor-instructions,
-                        .mentee-instructions {
-                            width: 80%;
-                            margin: 0 auto;
                         }
                     </style>
 
@@ -74,24 +70,10 @@
 
                 <body>
                     <header>
-                        <img src="https://cdn.codementor.io/d/images/logos/logo-with-icon-laptop.png">
+                        <img src="https://www.codementor.io/assets/img_new/codementor-logo-072bdda0090905876e16edf6bb9fc94d.png">
                     </header>
-                    <div class="mentee-instructions">
-                        <h1>Instructions</h1>
-                        <div class="inline-block">
-                            <p>1. Wait for the mentor to join the hangout</p>
-                        </div>
-                        <div class="inline-block">
-                            <p>2. Accept the screen sharing request when being prompted</p>
-                            <img src="https://cdn.codementor.io/d/images/google-hangouts-app/mentee-step-1.png">
-                        </div>
-                        <div class="inline-block">
-                            <p>3. Enjoy the screen sharing</p>
-                            <img width="250" src="https://cdn.codementor.io/d/images/google-hangouts-app/mentee-step-3.png">
-                        </div>
-                    </div>
-                    <div class="mentor-instructions">
-                        <h1>Instructions</h1>
+                    <div class="instructions">
+                        <h1>How to Start Remote Desktop Sharing</h1>
                         <div class="inline-block">
                             <p>1. Click "Add apps"</p>
                             <img src="https://cdn.codementor.io/d/images/google-hangouts-app/mentor-step-1.png">
@@ -99,10 +81,6 @@
                         <div class="inline-block">
                             <p>2. Click "Remote Desktop"</p>
                             <img width="250" src="https://cdn.codementor.io/d/images/google-hangouts-app/mentor-step-2.png">
-                        </div>
-                        <div class="inline-block">
-                            <p>3. Confirm that you'd like to help the mentee</p>
-                            <img width="250" src="https://cdn.codementor.io/d/images/google-hangouts-app/mentor-step-4.png">
                         </div>
                     </div>
                 </body>
