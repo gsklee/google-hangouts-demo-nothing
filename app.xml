@@ -25,7 +25,6 @@
                         
                         header > img {
                             width: 140px;
-                            height: 19px;
                             padding: 20px;
                         }
                         
@@ -53,16 +52,8 @@
                             ajax.send('{"hangouts_id": "' + hangoutId + '"}');
                         };
 
-                        gapi.hangout.onApiReady.add(function(event){
-                            if (event.isApiReady) {
-                                postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
-                                
-                                if (1 === gapi.hangout.getParticipants().length) {
-                                    $('.mentee-instructions').show();
-                                } else {
-                                    $('.mentor-instructions').show();
-                                }
-                            }
+                        gapi.hangout.onApiReady.add(function() {
+                            postHangoutId(gapi.hangout.getStartData(), gapi.hangout.getHangoutUrl().split('/').pop());
                         });
                     </script>
                 </head>
@@ -75,11 +66,11 @@
                         <h1>How to Start Remote Desktop Sharing</h1>
                         <div class="inline-block">
                             <p>1. Click "Add apps"</p>
-                            <img src="https://cdn.codementor.io/d/images/google-hangouts-app/mentor-step-1.png">
+                            <img src="https://cdn.codementor.io/d/images/google-hangouts-app/step-1.png">
                         </div>
                         <div class="inline-block">
                             <p>2. Click "Remote Desktop"</p>
-                            <img width="250" src="https://cdn.codementor.io/d/images/google-hangouts-app/mentor-step-2.png">
+                            <img src="https://cdn.codementor.io/d/images/google-hangouts-app/step-2.png">
                         </div>
                     </div>
                 </body>
